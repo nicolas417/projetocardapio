@@ -1,0 +1,101 @@
+*{ margin: 0px;
+   padding: 0px;
+  box-sizing: border-box;
+
+}
+/*Plano de fundo barra de navegação: #1E1F22
+Títulos e plano de fundo botões: #FFAE00
+Plano de fundo cards: RGBA(37, 37, 37, 0.8)
+Textos: #ffffff */
+
+
+
+
+:root{
+  --cornavegação:#1E1F22;
+  --cortítulobtn:#FFAE00;
+  --corcard: rgba(37, 37, 37, 0.8);
+  --cortextos: #ffffff ;
+}
+
+
+body{ background-image: url(imagens/bg.png);
+    color: var(--cortextos);
+   font-size: 20px;
+
+}
+
+header{
+   background-color:var(--cornavegação);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 25px;
+}
+
+nav a{
+    text-decoration: none;
+     color: var(--cortextos);
+    margin: 10px;
+    font-size: 20px;
+}
+ section{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 20px;
+ }
+
+ .boxproduto{
+     display: flex;
+    background-color: var(--corcard);
+    border-radius: 20px;
+    max-width: 850px;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    
+ }
+
+ .boxtexto{
+   width: 400px;
+    
+ }
+
+ h1,h2,h3,p,button {
+    margin: 15px;
+ }
+
+ h1{
+   font-size: 35px;
+   text-align: center;
+   text-transform: uppercase;
+ }
+ h2{
+    color: var(--cortítulobtn);
+    text-transform: uppercase;
+    
+ }
+
+ h3{
+    font-size: 30px;
+ }
+
+ .logo{
+    width: 250px;
+ }
+
+ .boximagem{
+    width: 400px;
+ }
+
+ button{
+    background-color: var(--cortítulobtn);
+    width: 150px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+ }
